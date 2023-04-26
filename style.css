@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.container {
+	background-color: #bbb;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.timerDisplay {
+	margin: 30px 0 10px 0;
+	font-size: 50px;
+	transition: .5s ease-in-out;
+}
+
+@keyframes blink {
+	0% {
+		opacity: 0.01;
+	}
+
+	100%{
+		opacity: 1;
+	}
+}
+
+.btnContainer button {
+	outline: none;
+	border: none;
+	cursor: pointer;
+	width: 100px;
+	height: 35px;
+	margin: 20px 10px;
+	border-radius: 5px;
+	font-size: 17px;
+}
+
+.btnContainer .startBtn {
+	background-color: green;
+}
+
+.btnContainer .lapBtn {
+	background-color: orangered;
+}
+
+.btnContainer .pauseBtn {
+	background-color: yellow;
+}
+
+.btnContainer .resetBtn {
+	background-color: red;
+}
+
+ .lapContainer {
+ 	visibility: hidden;
+ 	background-color: #bbb;
+ 	margin-top: 20px;
+ 	width: 72%;
+ 	height: 20%;
+	border-radius: 10px;
+	overflow-y: scroll;
+ }
+
+ .lapContainer ol {
+ 	margin: 10px 0 10px 50px;
+ }
+
+ .lapContainer li {
+ 	padding: 10px;
+ 	font-size: 17px;
+ }
