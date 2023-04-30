@@ -70,6 +70,10 @@ reset.onclick = () => {
 	} else {
 		clearInterval(timer);
 		timerDisplay.innerText = "00 : 00 : 00 : 00";
+		ms = 0;
+		sec = 0;
+		min = 0;
+		hour = 0;
 		lapOlContainer.innerHTML = "";
 		lapContainer.style.visibility = "hidden";
 		timerDisplay.style.animation = "";
